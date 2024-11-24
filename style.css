@@ -43,7 +43,7 @@ body{
 }
 
 .students-card{
-    border: 1px solid black;
+    border: 2px solid #993364;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 20px;
