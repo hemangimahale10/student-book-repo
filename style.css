@@ -35,3 +35,9 @@ body{
     border-radius: 25px;
     height: 25px;
 }
+
+.students-container{
+    background-color: #d279a6;
+    padding: 30px;
+    border-radius: 40px;
+}
