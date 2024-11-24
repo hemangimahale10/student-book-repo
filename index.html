@@ -19,6 +19,8 @@
     <div id="students-container" class="students-container"></div>
 
     <script>
+        const students =  ['Vaishnavi','Dipali','Priya','Harshada','Rina','Komal']
+        
         function getRandomEmojis()
         {
             const emojis = ['🌸','💮','🪷','🌹','🥀','🌺','🌻','🌼','🌷','🪻','💐']
@@ -30,7 +32,6 @@
             return emojis[randomIndex]
         }
 
-        const students =  ['Vaishnavi','Dipali','Priya','Harshada','Rina','Komal']
         function loadStudent()
         {          
             const studentsContainer = document.getElementById("students-container")
@@ -42,6 +43,16 @@
                 studentsContainer.innerHTML += `<div class='students-card'> ${i+1}] ${students[i]} ${getRandomEmojis()} </div>`;
             }  
         }
+
+        function addStudent()
+        {
+            const studentInput = document.getElementById('student-name')
+            students.push(studentInput.value);
+            studentInput.value = "";
+            alert("Student Added Successfully");
+            loadStudent()
+        }
+
     </script>
 </body>
 </html>
