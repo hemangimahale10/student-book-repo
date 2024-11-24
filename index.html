@@ -20,7 +20,7 @@
 
     <script>
         const students =  ['Vaishnavi','Dipali','Priya','Harshada','Rina','Komal']
-        
+
         function getRandomEmojis()
         {
             const emojis = ['🌸','💮','🪷','🌹','🥀','🌺','🌻','🌼','🌷','🪻','💐']
@@ -53,6 +53,15 @@
             loadStudent()
         }
 
+        function removeStudent()
+        {
+            const studentInput = document.getElementById('student-name')
+            const studentIndex = students.indexOf(studentInput.value)
+            students.splice(studentIndex, 1)
+            loadStudent()
+            studentInput.value = "";
+            alert("Student Removed Successfully");
+        }   
     </script>
 </body>
 </html>
