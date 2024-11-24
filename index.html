@@ -17,5 +17,20 @@
     </div>
   
     <div id="students-container" class="students-container"></div>
+
+    <script>
+        const students =  ['Vaishnavi','Dipali','Priya','Harshada','Rina','Komal']
+        function loadStudent()
+        {          
+            const studentsContainer = document.getElementById("students-container")
+
+            studentsContainer.innerHTML= ""
+
+            for (let i=0; i<students.length; i++)
+            {
+                studentsContainer.innerHTML += `<div class='students-card'> ${i+1}] ${students[i]} ${getRandomEmojis()} </div>`;
+            }  
+        }
+    </script>
 </body>
 </html>
