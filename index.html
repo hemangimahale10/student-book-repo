@@ -9,6 +9,12 @@
 <body>
     <h1 class="heading"> Student Book </h1> 
 
-    <input class="input-text" type="text" id="student-name" placeholder="Enter Student's Name">  
+    <div class="add-student-container">
+        <input class="input-text" type="text" id="student-name" placeholder="Enter Student's Name">
+        <button type="button" id="add-student"  onclick="addStudent()" class="btn-action">Add Student</button>
+        <button type="button" id="load-student" onclick="loadStudent()" class="btn-action">Load Student</button>
+        <button type="button" id="remove-student" onclick="removeStudent()" class="btn-action">Remove Student</button>
+    </div>
+  
 </body>
 </html>
